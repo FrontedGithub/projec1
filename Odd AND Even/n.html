@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        background-color: whitesmoke;
+        align-items: center;
+        color: darkred;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+<h1>Find the odd no or Even no</h1>
+<table border="2" height="200px" width="60%" cellspacing="0">
+    <tr>
+        <th colspan="2">Find Even or odd number</th>
+    </tr>
+
+    <tr>
+        <td>Enter a number</td>
+        <td><input type="text" id="txtnum"> </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button" id="btfind" value="find Number" onclick="FindOddEven() "></td>
+        <td id="res" style="background-color: grey; padding: 5px;"></td>
+    </tr>
+</table>
+<script>
+    function FindOddEven() {
+        var num = txtnum.value;
+        if (num % 2 == 0) {
+            document.getElementById('res').innerHTML = "Number is Even";
+        } else {
+            document.getElementById('res').innerHTML = "Number is odd";
+        }
+    }
+</script>
+
+</html>
+
+<body>
+
+</body>
+
+</html>
